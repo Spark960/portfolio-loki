@@ -1,0 +1,30 @@
+# dependencies
+node_modules/
+
+# next
+.next/
+out/
+
+# production
+build/
+dist/
+
+# logs
+*.log
+
+# env
+.env
+.env*.local
+
+# local tooling
+.codex/
+.agent/
+
+
+# system
+.DS_Store
+Thumbs.db
+
+# add
+lokesh-portfolio-plan-v2.*
+implementation_progress.*

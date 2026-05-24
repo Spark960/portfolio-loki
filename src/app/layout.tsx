@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Archivo, Space_Grotesk } from "next/font/google";
-import { StarBackground } from "@/components/StarBackground";
+import { GridBackground } from "@/components/GridBackground";
+import { CustomCursor } from "@/components/CustomCursor";
 import "./globals.css";
 
 const archivo = Archivo({
@@ -35,7 +36,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${archivo.variable} ${spaceGrotesk.variable}`}>
       <body>
-        <StarBackground />
+        <CustomCursor />
+        <GridBackground />
         {children}
       </body>
     </html>

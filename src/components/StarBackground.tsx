@@ -18,8 +18,8 @@ export function StarBackground() {
     const initStars = () => {
       stars = [];
       const isMobile = window.innerWidth < 768;
-      // Reduce number of stars on mobile for better performance
-      const numStars = isMobile ? 50 : 150;
+      // High density even on mobile since it's performant
+      const numStars = isMobile ? 120 : 200;
       
       for (let i = 0; i < numStars; i++) {
         stars.push({
@@ -27,7 +27,7 @@ export function StarBackground() {
           y: Math.random() * canvas.height,
           size: Math.random() * 1.5 + 0.5,
           speed: Math.random() * 0.3 + 0.1, // Slow, elegant movement
-          opacity: Math.random() * 0.5 + 0.2, // Subtle
+          opacity: Math.random() * 0.7 + 0.3, // Brighter
         });
       }
     };
@@ -62,9 +62,15 @@ export function StarBackground() {
         }
 
         ctx.fillStyle = `rgba(255, 255, 255, ${star.opacity})`;
+        const isMobile = window.innerWidth < 768;
+        ctx.shadowBlur = isMobile ? 3 : 6;
+        ctx.shadowColor = `rgba(255, 255, 255, ${star.opacity})`;
         ctx.beginPath();
         // Use rect for slightly better performance than arc
         ctx.fillRect(star.x, star.y, star.size, star.size);
+        
+        // Reset shadow for next operations if needed
+        ctx.shadowBlur = 0;
       });
 
       animationFrameId = requestAnimationFrame(animate);

@@ -1,7 +1,9 @@
+import { ContactDialog } from "@/components/ContactDialog";
+
 const links = [
   {
     label: "Email",
-    href: "mailto:your@email.com",
+    href: "mailto:lokeshparasa50@gmail.com",
   },
   {
     label: "GitHub",
@@ -9,7 +11,7 @@ const links = [
   },
   {
     label: "LinkedIn",
-    href: "#",
+    href: "https://www.linkedin.com/in/lokesh-parasa-66698631a/",
   },
 ];
 
@@ -37,9 +39,15 @@ export function Contact() {
                 >
                   {link.label} pending
                 </span>
+              ) : link.label === "Email" ? (
+                <ContactDialog key={link.label}>
+                  <button className="focus-ring inline-flex min-h-11 cursor-pointer items-center font-display text-sm font-bold uppercase text-text transition-colors duration-200 hover:text-accent border-[2px] border-transparent">
+                    Email
+                  </button>
+                </ContactDialog>
               ) : (
                 <a
-                  className="focus-ring inline-flex min-h-11 cursor-pointer items-center font-display text-sm font-bold uppercase text-text transition-colors duration-200 hover:text-accent"
+                  className="focus-ring inline-flex min-h-11 cursor-pointer items-center font-display text-sm font-bold uppercase text-text transition-colors duration-200 hover:text-accent border-[2px] border-transparent"
                   href={link.href}
                   key={link.label}
                   target={link.href.startsWith("http") ? "_blank" : undefined}
@@ -47,7 +55,7 @@ export function Contact() {
                 >
                   {link.label}
                 </a>
-              ),
+              )
             )}
           </div>
         </div>

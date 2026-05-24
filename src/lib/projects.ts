@@ -30,8 +30,8 @@ export const projects: Project[] = [
     ],
     stack: ["Next.js", "Supabase", "Node.js", "AES", "Atom Payments"],
     links: [
-      { label: "Live pending" },
-      { label: "Repo pending" },
+      { label: "Internal System" },
+      { label: "Private Repo" },
     ],
   },
   {
@@ -48,8 +48,8 @@ export const projects: Project[] = [
     ],
     stack: ["Next.js", "Supabase", "TypeScript"],
     links: [
-      { label: "Live pending" },
-      { label: "Repo pending" },
+      { label: "Live App", href: "https://ipc-demo-ochre.vercel.app/" },
+      { label: "Repo", href: "https://github.com/Spark960/ipc-demo" },
     ],
   },
   {
@@ -66,15 +66,32 @@ export const projects: Project[] = [
     ],
     stack: ["FastAPI", "React", "Python", "Ollama", "SSE", "lmms-eval"],
     links: [
-      { label: "Demo pending" },
-      { label: "Repo pending" },
+      { label: "Repo", href: "https://github.com/Spark960/ai-eval" },
     ],
     featured: true,
   },
 ];
 
-export const proofMetrics = [
-  "1,500+ registrations",
-  "15+ colleges",
-  "AI evals across text, vision, audio, and agents",
+export type ProofMetric = {
+  value: string;
+  label: string;
+  context: string;
+};
+
+export const proofMetrics: ProofMetric[] = [
+  {
+    value: "1,500+",
+    label: "Peak Registrations",
+    context: "Handled securely for the MES Summit ticketing system.",
+  },
+  {
+    value: "15+",
+    label: "Cross-College Sync",
+    context: "Unified submission flow used concurrently by teams across 15 institutions.",
+  },
+  {
+    value: "4 Modes",
+    label: "AI Modalities Evaluated",
+    context: "Benchmarking text, vision, audio, and agentic workflows.",
+  },
 ];

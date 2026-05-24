@@ -85,7 +85,7 @@ export function ContactDialog({ children }: { children: React.ReactNode }) {
 
   return (
     <>
-      <div onClick={() => setIsOpen(true)} className="inline-block w-full sm:w-auto">
+      <div onClick={() => setIsOpen(true)} className="inline-block">
         {children}
       </div>
       {mounted && createPortal(modalContent, document.body)}

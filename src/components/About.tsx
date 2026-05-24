@@ -25,16 +25,16 @@ export function About() {
           </div>
           <div className="border border-border bg-surface p-6 md:flex-1 md:p-8">
             <StackGroup
-              label="Daily"
-              items={["Next.js", "React", "FastAPI", "Supabase", "Python", "Java"]}
+              label="Languages"
+              items={["TypeScript", "Python", "C", "Java"]}
             />
             <StackGroup
-              label="AI Systems"
-              items={["Local LLMs", "Multimodal evals", "Ollama", "SSE", "Agents"]}
+              label="Web & Systems"
+              items={["Next.js", "React", "Node.js", "FastAPI", "Supabase"]}
             />
             <StackGroup
-              label="Close to Metal"
-              items={["Node.js", "TypeScript", "C", "DSA"]}
+              label="AI & Infrastructure"
+              items={["Local LLMs", "Ollama", "Agents", "SSE", "Multimodal evals"]}
             />
           </div>
         </div>

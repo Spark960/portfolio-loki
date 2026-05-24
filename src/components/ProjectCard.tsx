@@ -40,8 +40,8 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
         </p>
       </div>
 
-      <div className="mt-8 flex items-center justify-between border-t border-border pt-6">
-        <div className="flex gap-3">
+      <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center justify-between border-t border-border pt-6">
+        <div className="flex flex-wrap gap-3">
           {project.stack.slice(0, 3).map((item) => (
             <span key={item} className="text-xs font-bold uppercase text-muted-strong">
               {item}

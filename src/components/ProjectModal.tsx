@@ -39,7 +39,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
           </div>
           <button
             onClick={onClose}
-            className="flex h-12 w-12 items-center justify-center border-[2px] border-border bg-bg text-text transition-all hover:border-accent hover:text-accent hover:shadow-[4px_4px_0px_var(--accent)] active:translate-x-1 active:translate-y-1 active:shadow-none"
+            className="flex h-12 w-12 items-center justify-center border-[2px] border-border bg-transparent text-text transition-all hover:border-accent hover:text-accent"
             aria-label="Close modal"
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="square">

@@ -35,9 +35,9 @@ export function Hero() {
               sequence={[
                 'Second-year undergrad.',
                 1500,
-                'Full-stack engineer.',
+                'Full-stack developer.',
                 1500,
-                'AI systems builder.',
+                'AI Integrator.',
                 1500,
               ]}
               wrapper="span"
@@ -48,8 +48,8 @@ export function Hero() {
             Shipping real systems.
           </h1>
           <p className="mt-6 max-w-2xl animate-[fadeUp_500ms_ease-out_120ms_both] text-lg leading-relaxed text-muted-strong md:text-xl md:leading-8">
-            Full-stack and AI systems builder working on ticketing infrastructure,
-            cross-college platforms, and multimodal evaluation tooling.
+            Hi, I'm Lokesh, a 2nd year CS student at MIT Manipal building scalable web platforms,
+            robust backend infrastructure, and multimodal AI systems.
           </p>
           <div className="mt-10 flex animate-[fadeUp_500ms_ease-out_220ms_both] flex-col sm:flex-row sm:items-center gap-4">
             <a

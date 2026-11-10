@@ -33,7 +33,7 @@ export function Hero() {
           <h1 className="animate-[fadeUp_500ms_ease-out_both] font-display text-[clamp(2.5rem,7vw,5rem)] font-bold leading-tight min-h-[120px] sm:min-h-0">
             <TypeAnimation
               sequence={[
-                'Second-year undergrad.',
+                'Third-year undergrad.',
                 1500,
                 'Full-stack developer.',
                 1500,

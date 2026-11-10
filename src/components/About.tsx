@@ -10,7 +10,7 @@ export function About() {
             </h2>
             <div className="mt-8 max-w-3xl space-y-5 text-lg leading-8 text-muted-strong">
               <p>
-                I&apos;m Lokesh, a second-year Computer and Communication
+                I&apos;m Lokesh, a third-year Computer and Communication
                 Engineering student at MIT Manipal.
               </p>
               <p>

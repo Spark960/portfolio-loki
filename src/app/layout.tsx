@@ -10,7 +10,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Lokesh | Full-Stack & AI Systems",
   description:
-    "Hi, I'm Lokesh, a 2nd year CS student at MIT Manipal building scalable web platforms, robust backend infrastructure, and AI evaluation systems.",
+    "Hi, I'm Lokesh, a 3rd year CS student at MIT Manipal building scalable web platforms, robust backend infrastructure, and AI evaluation systems.",
   openGraph: {
     title: "Lokesh | Full-Stack & AI Systems",
     description:
